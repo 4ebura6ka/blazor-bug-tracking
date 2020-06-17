@@ -27,6 +27,7 @@ namespace BugTrackerUI
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddSingleton<IBugService, BugService>();
             services.AddServerSideBlazor();
         }
 
